@@ -76,9 +76,5 @@ def main():
 	
 	window.mainloop()
 
-# ~ def main():
-	# ~ splitFile("test.mp4","truc",25000)
-	# ~ gatherFile("truc","result.mp4")
-
 if __name__ == '__main__':
 	main()
