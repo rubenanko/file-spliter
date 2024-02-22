@@ -56,7 +56,7 @@ def main():
 	chunkSizeEntry = tk.Entry(window)
 	chunkSizeEntry.pack()
 	
-	split_button = tk.Button(window, text ="split", command=lambda: splitFile(combofile.get(),"output" + str(time.time()) + "/chunk",int(chunkSizeEntry.get())))
+	split_button = tk.Button(window, text ="split", command=lambda: splitFile(combofile.get(),combofile.get() + "-splited" + str(time.time()) + "/chunk",int(chunkSizeEntry.get())))
 	split_button.pack()
 		
 	gatherFileLabel = tk.Label(window,text="gather files")
@@ -75,6 +75,7 @@ def main():
 	gather_button.pack()
 	
 	window.mainloop()
+
 
 if __name__ == '__main__':
 	main()
